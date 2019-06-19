@@ -77,3 +77,11 @@ curl -X PUT \
 ```
 
 ### Screenshots
+
+Login ![view](img/login.png)
+
+Dashboard ![view](img/dashboard.png)
+
+Detail ![view](img/detail.png)
+
+HTTP Trace ![view](img/http_trace.png)
