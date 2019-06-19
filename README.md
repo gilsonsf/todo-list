@@ -33,11 +33,11 @@ http://localhost:9000/ user:admin password:admin
 
 ### Pode usar cURL ou Postman para acessar a aplicação
 
-### Postman Collection
+### Usando Postman Collection
 
 [TODO-LIST-API.postman_collection.json](https://github.com/gilsonsf/todo-list/blob/master/client/TODO-LIST%20API.postman_collection.json)
 
-### cURL
+### Usando cURL
 
 #### Add Task
 ```
