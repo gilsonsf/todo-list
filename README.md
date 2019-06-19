@@ -33,13 +33,13 @@ http://localhost:9000/ user:admin password:admin
 
 ### Pode usar cURL ou Postman para acessar a aplicação
 
-#### Postman
+### Postman
 
 ![postman](client/TODO-LIST API.postman_collection.json)
 
-#### cURL
+### cURL
 
-##### Add Task
+#### Add Task
 ```
 curl -X POST \
   http://localhost/todo \
@@ -50,16 +50,23 @@ curl -X POST \
 }'
 ```
 
-##### Find Task
+#### Find Task
+```
 curl -X GET http://localhost/todo/1
-  
-##### Find All Tasks
+```
+
+#### Find All Tasks
+```
 curl -X GET http://localhost/todo
-  
-##### Delete Task
+```
+
+#### Delete Task
+```
 curl -X DELETE  http://localhost/todo/1
-  
-##### Alter Task
+```
+
+#### Alter Task
+```
 curl -X PUT \
   http://localhost/todo/1 \
    -H 'Content-Type: application/json' \
@@ -67,6 +74,6 @@ curl -X PUT \
 	"description": "Task Done",
 	"status": "COMPLETED"
 }'
-
+```
 
 ### Screenshots
