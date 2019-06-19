@@ -35,7 +35,7 @@ http://localhost:9000/ user:admin password:admin
 
 ### Postman Collection
 
-![](client/TODO-LIST API.postman_collection.json)
+[TODO-LIST-API.postman_collection.json](https://github.com/gilsonsf/todo-list/blob/master/client/TODO-LIST%20API.postman_collection.json)
 
 ### cURL
 
