@@ -3,7 +3,6 @@ Uma RESTFUL API simples que armazena e atualiza tarefas (TODO LIST API).
 
 Esta aplicação usa NGINX como Load Balancer na frente de APIs REST criadas com Spring Boot (Tomcat embedded), PostgreSQL como Banco de Dados e Spring Boot Admin e Actuator para gerenciar e monitorar os serviços.
 Todos os componentes são executados dentro de containers Docker.
-Para exemplos de uso foi gerado cURL e Postman Collection.
 
 ## Arqhitetura Overview
 
