@@ -5,19 +5,19 @@ Esta aplicação usa NGINX como Load Balancer na frente de APIs REST criadas com
 Todos os componentes são executados dentro de containers Docker.
 Para exemplos de uso foi gerado cURL e Postman Collection.
 
-## Architetura Overview
+## Arqhitetura Overview
 
-![](img/docker-architecture.png)
+![](img/arquitetura.png)
 
-## How-to
+## Passo a passo
 
-### Requirements
+### Pré requisitos
 
 Install <b>Docker</b>: https://docs.docker.com/engine/installation/
 
 Install <b>docker-compose</b>: https://docs.docker.com/compose/install/
 
-### Installation
+### Instalação
 
 Run the following commands:
   
@@ -31,7 +31,7 @@ $ sudo docker-compose up
 
 http://localhost:9000/ user:admin password:admin 
 
-### Pode usar cURL ou Postman para acessar a aplicação
+### Pode usar cURL ou Postman para executar  GET, PUT, POST, DELETE
 
 ### Usando Postman Collection
 
