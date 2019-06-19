@@ -39,7 +39,7 @@ http://localhost:9000/ user:admin password:admin
 
 ### Usando cURL
 
-#### Add Task
+#### Adiciona Tarefa
 ```
 curl -X POST \
   http://localhost/todo \
@@ -50,22 +50,22 @@ curl -X POST \
 }'
 ```
 
-#### Find Task
+#### Busca Tarefa
 ```
 curl -X GET http://localhost/todo/1
 ```
 
-#### Find All Tasks
+#### Busca Todas Tarefas
 ```
 curl -X GET http://localhost/todo
 ```
 
-#### Delete Task
+#### Deleta Tarefa
 ```
 curl -X DELETE  http://localhost/todo/1
 ```
 
-#### Alter Task
+#### Altera Tarefa
 ```
 curl -X PUT \
   http://localhost/todo/1 \
@@ -76,7 +76,7 @@ curl -X PUT \
 }'
 ```
 
-### Screenshots
+### Captura de Telas
 
 Login ![view](img/login.png)
 
@@ -85,3 +85,22 @@ Dashboard ![view](img/dashboard.png)
 Detail ![view](img/detail.png)
 
 HTTP Trace ![view](img/http_trace.png)
+
+## Tecnologias
+- [Spring Boot](https://spring.io/projects/spring-boot)
+
+- [Spring Boot Admin] (https://github.com/codecentric/spring-boot-admin)
+
+- [Docker](https://www.docker.com/)
+
+- [Nginx](https://www.nginx.com/)
+
+- [PostgresSQL](https://www.postgresql.org/)
+
+- [Java](www.java.com)
+
+- [Maven](https://maven.apache.org/)
+
+- [JUnit](https://junit.org/)
+
+- [Mockito](https://site.mockito.org/)
