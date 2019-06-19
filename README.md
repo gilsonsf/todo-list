@@ -1,7 +1,7 @@
 # Todo List API
 Uma RESTFUL API simples que armazena e atualiza tarefas (TODO LIST API).
 
-Esta aplicação usa NGINX como Load Balancer na frente de APIs REST criado com Spring Boot (Tomcat embedded), PostgreSQL como Banco de Dados e Spring Boot Admin e Actuator para gerenciar e monitorar os serviços.
+Esta aplicação usa NGINX como Load Balancer na frente de APIs REST criadas com Spring Boot (Tomcat embedded), PostgreSQL como Banco de Dados e Spring Boot Admin e Actuator para gerenciar e monitorar os serviços.
 Todos os componentes são executados dentro de containers Docker.
 Para exemplos de uso foi gerado cURL e Postman Collection.
 
@@ -33,9 +33,9 @@ http://localhost:9000/ user:admin password:admin
 
 ### Pode usar cURL ou Postman para acessar a aplicação
 
-### Postman
+### Postman Collection
 
-![postman](client/TODO-LIST API.postman_collection.json)
+![](client/TODO-LIST API.postman_collection.json)
 
 ### cURL
 
