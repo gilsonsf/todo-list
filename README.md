@@ -30,7 +30,7 @@ $ sudo docker-compose up
 
 http://localhost:9000/ user:admin password:admin 
 
-### Pode usar cURL ou Postman para executar  GET, PUT, POST, DELETE
+### Pode usar cURL ou Postman para executar GET, PUT, POST e DELETE
 
 ### Usando Postman Collection
 
