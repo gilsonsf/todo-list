@@ -1,0 +1,72 @@
+version: '3.3'
+services:
+    nginx-ws:
+        build: nginx/. 
+        container_name: nginx-ws
+        ports:
+            - "80:80"
+        networks: 
+            - container-network
+        depends_on:
+            - "todo-list-api-1"
+            - "todo-list-api-2"
+            - "todo-list-api-3"
+      
+    todo-list-api-1:
+        build: todo-list-api/.
+        container_name: todo-list-api-1
+        ports:
+            - "8080"
+        networks: 
+            - container-network
+        depends_on:
+              - "postgres-db"
+              - "spring-boot-admin-server"
+
+    todo-list-api-2:
+        build: todo-list-api/.
+        container_name: todo-list-api-2
+        ports:
+            - "8080"
+        networks: 
+            - container-network
+        depends_on:
+            - "postgres-db"
+            - "spring-boot-admin-server"
+      
+    todo-list-api-3:
+        build: todo-list-api/.
+        container_name: todo-list-api-3
+        ports:
+            - "8080"
+        networks: 
+            - container-network
+        depends_on:
+            - "postgres-db"
+            - "spring-boot-admin-server"
+
+    spring-boot-admin-server:
+        build: server/.
+        container_name: spring-boot-admin-server
+        ports:
+          - "9000:9000"
+        networks: 
+          - container-network
+
+    postgres-db:
+        image: postgres:9.4.5
+        container_name: postgres-db
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: DB_TODO_LIST
+        volumes:
+            - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+        ports:
+          - "5432:5432"
+        networks: 
+          - container-network
+
+networks: 
+    container-network:
+        driver: bridge
