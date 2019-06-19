@@ -40,6 +40,7 @@ http://localhost:9000/ user:admin password:admin
 #### cURL
 
 ##### Add Task
+```
 curl -X POST \
   http://localhost/todo \
   -H 'Content-Type: application/json' \
@@ -47,6 +48,7 @@ curl -X POST \
 	"description": "Task To Do",
 	"status": "PENDING"
 }'
+```
 
 ##### Find Task
 curl -X GET http://localhost/todo/1
