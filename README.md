@@ -1,7 +1,7 @@
 # Todo List API
 Uma RESTFUL API simples que armazena e atualiza tarefas (TODO LIST API).
 
-Esta aplicação usa NGINX como Load Balancer na frente de APIs REST criado com Spring Boot (Tomcat embedded), PostgreSQL como Banco de Dados e Spring Boot Admin e Actuator para gerenciar e monitorar os serviços.
+Esta aplicação usa NGINX como Load Balancer na frente de APIs REST criadas com Spring Boot (Tomcat embedded), PostgreSQL como Banco de Dados e Spring Boot Admin e Actuator para gerenciar e monitorar os serviços.
 Todos os componentes são executados dentro de containers Docker.
 Para exemplos de uso foi gerado cURL e Postman Collection.
 
@@ -33,13 +33,14 @@ http://localhost:9000/ user:admin password:admin
 
 ### Pode usar cURL ou Postman para acessar a aplicação
 
-##Postman
+### Usando Postman Collection
 
-![postman](client/TODO-LIST API.postman_collection.json)
+[TODO-LIST-API.postman_collection.json](https://github.com/gilsonsf/todo-list/blob/master/client/TODO-LIST%20API.postman_collection.json)
 
-##cURL
+### Usando cURL
 
-#Add Task
+#### Add Task
+```
 curl -X POST \
   http://localhost/todo \
   -H 'Content-Type: application/json' \
@@ -47,17 +48,25 @@ curl -X POST \
 	"description": "Task To Do",
 	"status": "PENDING"
 }'
+```
 
-#Find Task
+#### Find Task
+```
 curl -X GET http://localhost/todo/1
-  
-#Find All Tasks
+```
+
+#### Find All Tasks
+```
 curl -X GET http://localhost/todo
-  
-#Delete Task
+```
+
+#### Delete Task
+```
 curl -X DELETE  http://localhost/todo/1
-  
-#Alter Task
+```
+
+#### Alter Task
+```
 curl -X PUT \
   http://localhost/todo/1 \
    -H 'Content-Type: application/json' \
@@ -65,6 +74,6 @@ curl -X PUT \
 	"description": "Task Done",
 	"status": "COMPLETED"
 }'
-
+```
 
 ### Screenshots
