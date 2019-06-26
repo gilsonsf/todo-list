@@ -3,21 +3,20 @@ Uma RESTFUL API simples que armazena e atualiza tarefas (TODO LIST API).
 
 Esta aplicação usa NGINX como Load Balancer na frente de APIs REST criadas com Spring Boot (Tomcat embedded), PostgreSQL como Banco de Dados e Spring Boot Admin e Actuator para gerenciar e monitorar os serviços.
 Todos os componentes são executados dentro de containers Docker.
-Para exemplos de uso foi gerado cURL e Postman Collection.
 
-## Architetura Overview
+## Arquitetura Overview
 
-![](img/docker-architecture.png)
+![](img/arquitetura.png)
 
-## How-to
+## Passo a passo
 
-### Requirements
+### Pré requisitos
 
 Install <b>Docker</b>: https://docs.docker.com/engine/installation/
 
 Install <b>docker-compose</b>: https://docs.docker.com/compose/install/
 
-### Installation
+### Instalação
 
 Run the following commands:
   
@@ -31,7 +30,7 @@ $ sudo docker-compose up
 
 http://localhost:9000/ user:admin password:admin 
 
-### Pode usar cURL ou Postman para acessar a aplicação
+### Pode usar cURL ou Postman para executar GET, PUT, POST e DELETE
 
 ### Usando Postman Collection
 
@@ -89,7 +88,7 @@ HTTP Trace ![view](img/http_trace.png)
 ## Tecnologias
 - [Spring Boot](https://spring.io/projects/spring-boot)
 
-- [Spring Boot Admin] (https://github.com/codecentric/spring-boot-admin)
+- [Spring Boot Admin](https://github.com/codecentric/spring-boot-admin)
 
 - [Docker](https://www.docker.com/)
 
